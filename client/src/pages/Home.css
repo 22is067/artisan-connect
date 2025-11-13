@@ -1,0 +1,179 @@
+.home {
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.hero {
+  height: 600px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-lg {
+  padding: 15px 35px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Features Section */
+.features {
+  padding: 80px 0;
+  background: white;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+  color: #2c3e50;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.feature-card {
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.feature-icon {
+  font-size: 60px;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.feature-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Featured Sections */
+.featured-artisans,
+.featured-products {
+  padding: 60px 0;
+}
+
+.featured-products {
+  background: #f9f9f9;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.view-all {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.view-all:hover {
+  text-decoration: underline;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.cta-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.cta-section p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-lg {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .section-header {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}

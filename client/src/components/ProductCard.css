@@ -1,0 +1,132 @@
+.product-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: #f0f0f0;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.availability-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #4CAF50;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.availability-badge.out-of-stock {
+  background: #f44336;
+}
+
+.availability-badge.made-to-order {
+  background: #ff9800;
+}
+
+.product-info {
+  padding: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-info h3 {
+  margin-bottom: 10px;
+  color: #2c3e50;
+  font-size: 18px;
+}
+
+.product-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.category, .views {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.description {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  flex: 1;
+}
+
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+}
+
+.amount {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.negotiable {
+  font-size: 12px;
+  color: #ff9800;
+  font-weight: 600;
+}
+
+.artisan-info-small {
+  font-size: 12px;
+  color: #666;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+
+.artisan-info-small a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.artisan-info-small a:hover {
+  text-decoration: underline;
+}
+
+.product-card .btn {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}

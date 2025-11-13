@@ -1,0 +1,267 @@
+.profile-page {
+  padding: 40px 0;
+  min-height: calc(100vh - 70px);
+}
+
+.profile-content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 30px;
+}
+
+.profile-sidebar {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  height: fit-content;
+  position: sticky;
+  top: 90px;
+}
+
+.profile-avatar {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.avatar-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0 auto 20px;
+}
+
+.profile-avatar h2 {
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.role-badge {
+  display: inline-block;
+  background: #e3f2fd;
+  color: #1976d2;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.verified-badge {
+  display: inline-block;
+  background: #4CAF50;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.profile-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.stat-item svg {
+  color: #4CAF50;
+  font-size: 18px;
+}
+
+.stat-item span {
+  color: #666;
+  font-size: 14px;
+  word-break: break-word;
+}
+
+.profile-main {
+  background: white;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Profile View */
+.profile-view {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.info-section {
+  padding-bottom: 30px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.info-section:last-child {
+  border-bottom: none;
+}
+
+.info-section h3 {
+  font-size: 22px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.info-grid {
+  display: grid;
+  gap: 15px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.info-item strong {
+  color: #2c3e50;
+  font-size: 14px;
+}
+
+.info-item span {
+  color: #666;
+  font-size: 16px;
+}
+
+.bio-text {
+  color: #666;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.skills-list-view {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag-view {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Profile Form */
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form-section h3 {
+  font-size: 20px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.skills-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.skills-input input {
+  flex: 1;
+}
+
+.skills-list-edit {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.skill-tag-edit {
+  background: #e3f2fd;
+  color: #1976d2;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.remove-skill {
+  background: none;
+  border: none;
+  color: #1976d2;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 5px;
+  line-height: 1;
+}
+
+.remove-skill:hover {
+  color: #f44336;
+}
+
+.form-actions {
+  display: flex;
+  gap: 15px;
+  padding-top: 20px;
+}
+
+.form-actions .btn {
+  flex: 1;
+  max-width: 200px;
+}
+
+@media screen and (max-width: 968px) {
+  .profile-content {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-sidebar {
+    position: relative;
+    top: 0;
+  }
+
+  .profile-main {
+    padding: 25px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .form-actions .btn {
+    max-width: 100%;
+  }
+}

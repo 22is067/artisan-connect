@@ -1,0 +1,271 @@
+.product-details-page {
+  padding: 40px 0;
+}
+
+.product-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.image-section {
+  position: sticky;
+  top: 90px;
+  height: fit-content;
+}
+
+.main-image {
+  width: 100%;
+  height: 500px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 20px;
+}
+
+.image-thumbnails {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.image-thumbnails img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.image-thumbnails img:hover,
+.image-thumbnails img.active {
+  border-color: #4CAF50;
+}
+
+.info-section {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.info-section h1 {
+  font-size: 32px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.product-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.product-meta span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 15px;
+  background: #f9f9f9;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.availability {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.availability.in-stock {
+  background: #d4edda !important;
+  color: #155724 !important;
+}
+
+.availability.out-of-stock {
+  background: #f8d7da !important;
+  color: #721c24 !important;
+}
+
+.availability.made-to-order {
+  background: #fff3cd !important;
+  color: #856404 !important;
+}
+
+.price-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.price {
+  font-size: 42px;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.negotiable-badge {
+  background: #ff9800;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.description-section {
+  margin-bottom: 30px;
+}
+
+.description-section h2,
+.specifications h2 {
+  font-size: 22px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.description-section p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+}
+
+.specifications {
+  margin-bottom: 30px;
+}
+
+.specifications ul {
+  list-style: none;
+  padding: 0;
+}
+
+.specifications li {
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+  color: #666;
+  font-size: 16px;
+}
+
+.specifications li:last-child {
+  border-bottom: none;
+}
+
+.production-time {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  background: #e3f2fd;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  color: #1976d2;
+  font-size: 16px;
+}
+
+.tags-section {
+  margin-bottom: 30px;
+}
+
+.tags-section h3 {
+  font-size: 18px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  background: #f0f0f0;
+  color: #666;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.artisan-card-mini {
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 2px solid #f0f0f0;
+}
+
+.artisan-card-mini h3 {
+  font-size: 20px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.artisan-info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.artisan-info img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.artisan-info h4 {
+  font-size: 18px;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.artisan-info p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.artisan-info .rating {
+  color: #ffc107;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 968px) {
+  .product-content {
+    grid-template-columns: 1fr;
+  }
+
+  .image-section {
+    position: relative;
+    top: 0;
+  }
+
+  .main-image {
+    height: 400px;
+  }
+
+  .info-section h1 {
+    font-size: 26px;
+  }
+
+  .price {
+    font-size: 32px;
+  }
+
+  .artisan-info {
+    flex-direction: column;
+    text-align: center;
+  }
+}

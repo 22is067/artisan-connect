@@ -1,0 +1,184 @@
+.artisan-profile-page {
+  padding: 40px 0;
+}
+
+.profile-header {
+  background: white;
+  border-radius: 10px;
+  padding: 40px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.profile-image-large {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.profile-image-large img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.verified-badge-large {
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  background: #4CAF50;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h1 {
+  font-size: 36px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.profile-info .location {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profile-info .rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-badge {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.bio-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.portfolio-item {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.portfolio-item h3 {
+  font-size: 18px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.portfolio-item p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.portfolio-item a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.products-section {
+  margin-top: 40px;
+}
+
+.products-section h2 {
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-info {
+    width: 100%;
+  }
+
+  .profile-info .location,
+  .profile-info .rating,
+  .contact-info p {
+    justify-content: center;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}
